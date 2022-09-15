@@ -14,7 +14,30 @@
 </head>
 
 <body>
-  <h1 class="title"><img src="./logo.png" /></h1>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark py-1">
+      <div class="container">
+        <h1 class="title"><img src="./logo.png" /></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" d-flex">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-semibold text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-semibold text-white" href="blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h3 class="text-white text-center pt-2">Typing Time</h3>
   <div id="show-time">0 seconds</div>
 
   <div class="box-container">

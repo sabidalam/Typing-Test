@@ -35,6 +35,91 @@
             </div>
         </nav>
     </header>
+    <section class="container my-5">
+        <h2 class="text-center my-4"><span class="bg-primary text-light px-3 py-1 rounded">Blog</span></h1>
+            <div>
+                <div class="card mb-5">
+                    <div class="card-header">
+                        <h5 class="fw-semibold">What's The difference between Local-storage and Session-storage?</h5>
+                    </div>
+                    <div class="card-body">
+                        <p><b>Local-storage:</b> <br>
+                            1. The storage capacity of local storage is 5MB/10MB. <br>
+                            2. As it is not session-based, it must be deleted via javascript or manually.<br>
+                            3. The client can only read local storage.<br>
+                            4.There is no transfer of data to the server
+                        </p>
+                        <p><b>Session-storage:</b> <br>
+                            1. The storage capacity of session storage is 5MB <br>
+                            2. It's session-based and works per window or tab. This means that data is stored only for
+                            the duration of a session, i.e., until the browser (or tab) is closed.<br>
+                            3. The client can only read local storage.<br>
+                            4.There is no transfer of data to the server
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-5">
+                    <div class="card-header">
+                        <h5 class="fw-semibold">What's the difference between Global scope and Block scope?</h5>
+                    </div>
+                    <div class="card-body">
+                        <P><b>Global scope:</b> <br>
+                            The variables defined outside of any function or curly brackets are known as global
+                            variables and have global scope. Global scope means that the variables can be accessed from
+                            any part of that program, any function or conditional state can access that variable.
+                            It is not a good practice to use global variables when they are not needed as every code
+                            block will have access to those variables.
+                        </P>
+                        <p><b>Block scope:</b> <br>
+                            Block scope is also a sub-type of local scope. The block scope can be defined as the scope
+                            of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or
+                            conditional statements, or something else. You are only allowed to refer to these variables
+                            from within the curly brackets {}.The keywords let and const are used to define block
+                            variables.We created a block-scoped local variable enclosed within curly brackets {} by
+                            using the keyword let.
+                        </p>
+                    </div>
+                </div>
+                <div class="card mb-5">
+                    <div class="card-header">
+                        <h5 class="fw-semibold">What is an Event loop and how does it work in Javascript?</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            JavaScript has a runtime model based on an event loop, which is responsible for executing
+                            the
+                            code, collecting and processing events, and executing queued sub-tasks.Event loop is an
+                            endless loop, which waits for tasks, executes them and then sleeps until it receives more
+                            tasks. <br>
+                            The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the
+                            Call Stack is empty, the Event Loop will take the first event from the queue and will push
+                            it to the Call Stack, which effectively runs it.
+
+                            Such an iteration is called a tick in the Event Loop. Each event is just a function
+                            callback.
+                            The event loop executes the tasks starting from the oldest first.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="fw-semibold">How can we get undefine in Javascript?</h5>
+                    </div>
+                    <div class="card-body">
+                        <p> Let's see some ways that will give us undefine in javascript - <br>
+                            1. Variable that is not initialized will give undefined.<br>
+                            2. Function with no return will give undefined.<br>
+                            3. Parameter that is not passed will give undefined.<br>
+                            4. If return has nothing on the right side will return undefined.<br>
+                            5. Property that doesn't exists in an object will give undefined.<br>
+                            6. If we try to access array elements outside of the index range will us undefined.<br>
+                            7. Deleting an element inside an array.<br>
+                            8. Set a value directly to undefined.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>

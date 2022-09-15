@@ -91,12 +91,15 @@
                             code, collecting and processing events, and executing queued sub-tasks.Event loop is an
                             endless loop, which waits for tasks, executes them and then sleeps until it receives more
                             tasks. <br>
+                            <b>how event loop works</b>- <br>
                             The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the
                             Call Stack is empty, the Event Loop will take the first event from the queue and will push
                             it to the Call Stack, which effectively runs it.
-
                             Such an iteration is called a tick in the Event Loop. Each event is just a function
-                            callback.
+                            callback.The event loop is a mechanism that allows JavaScript to perform non-blocking
+                            operations. When an asynchronous task is started, the event loop will start running. Once
+                            the task is completed, the event loop will again check for any other tasks that need to be
+                            performed. This process will continue until all tasks have been completed.
                             The event loop executes the tasks starting from the oldest first.
                         </p>
                     </div>
